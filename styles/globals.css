@@ -1,0 +1,58 @@
+html,
+body {
+  padding: 0 2rem;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+input[type="submit"],
+button {
+  background: #ececec;
+  border: 0;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border-radius: 10px;
+  border: 0.125rem solid rgba(0, 0, 0, 0.2);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.back {
+  margin-left: 1rem;
+}
+
+.post {
+  background: white;
+  transition: box-shadow 0.1s ease-in;
+  border: black 1px solid;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.post:hover {
+  box-shadow: 1px 1px 3px #aaa;
+}
+
+.post + .post {
+  margin-top: 2rem;
+}
+
+.page {
+  padding: 0 2rem;
+}

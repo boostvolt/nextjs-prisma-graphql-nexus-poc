@@ -1,0 +1,23 @@
+mutation CreatePost($title: String!, $content: String, $authorEmail: String!) {
+  createPost(title: $title, content: $content, authorEmail: $authorEmail) {
+    id
+    title
+    content
+    author {
+      id
+      name
+    }
+  }
+}
+
+mutation DeletePost($postId: String!) {
+  deletePost(postId: $postId) {
+    id
+    title
+    content
+    author {
+      id
+      name
+    }
+  }
+}

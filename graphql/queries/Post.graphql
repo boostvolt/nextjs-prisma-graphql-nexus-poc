@@ -1,0 +1,23 @@
+query AllPosts {
+  allPosts {
+    id
+    title
+    content
+    author {
+      id
+      name
+    }
+  }
+}
+
+query SinglePost($postId: String!) {
+  singlePost(postId: $postId) {
+    id
+    title
+    content
+    author {
+      id
+      name
+    }
+  }
+}
